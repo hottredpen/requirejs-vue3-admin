@@ -10,6 +10,7 @@ import Upload from 'component!../view/demo/Upload'
 // import I18n from 'component!../view/demo/I18n'
 import Permission from 'component!../view/demo/Permission'
 import Page404 from 'component!../view/Page404'
+import Page403 from 'component!../view/Page403'
 
 
 const routes = [
@@ -94,6 +95,14 @@ const routes = [
                     title: '找不到页面'
                 },
                 component: () => Page404
+            }, 
+            {
+                path: '/403',
+                name: '403',
+                meta: {
+                    title: '找不到页面'
+                },
+                component: () => Page403
             }, 
             // {
             //     path: '/editor',

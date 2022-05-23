@@ -1,11 +1,8 @@
 define(['babel-standalone', 'babel-polyfill', 'http-vue-loader'], function (Babel, _, httpVueLoader) {
     return {
         load: function (name, req, onload, config) {
-            console.log('name',name)
-
-
+            // console.log('name',name)
             httpVueLoader.httpRequest(req.toUrl(name) + ".js").then(function (script) {
-
                 onload.fromText(Babel.transform(script, {
                     presets: [
                         'es2015',
@@ -15,8 +12,6 @@ define(['babel-standalone', 'babel-polyfill', 'http-vue-loader'], function (Babe
                         'transform-es2015-modules-amd',
                     ],
                 }).code);
-
-
             });
         },
     };

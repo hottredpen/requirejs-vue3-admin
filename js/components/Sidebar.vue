@@ -90,33 +90,33 @@ export default {
                         index: "/upload",
                         title: "文件上传",
                     },
-                    {
-                        index: "4",
-                        title: "三级菜单",
-                        subs: [
-                            {
-                                index: "/editor",
-                                title: "富文本编辑器",
-                            },
-                        ],
-                    },
+                    // {
+                    //     index: "4",
+                    //     title: "三级菜单",
+                    //     subs: [
+                    //         {
+                    //             index: "/editor",
+                    //             title: "富文本编辑器",
+                    //         },
+                    //     ],
+                    // },
                 ],
             },
-            {
-                icon: Sugar,
-                index: "/icon",
-                title: "自定义图标",
-            },
-            {
-                icon: PieChart,
-                index: "/charts",
-                title: "schart图表",
-            },
-            {
-                icon: ElementPlus,
-                index: "/i18n",
-                title: "国际化功能",
-            },
+            // {
+            //     icon: Sugar,
+            //     index: "/icon",
+            //     title: "自定义图标",
+            // },
+            // {
+            //     icon: PieChart,
+            //     index: "/charts",
+            //     title: "schart图表",
+            // },
+            // {
+            //     icon: ElementPlus,
+            //     index: "/i18n",
+            //     title: "国际化功能",
+            // },
             {
                 icon: Failed,
                 index: "7",
@@ -132,11 +132,11 @@ export default {
                     },
                 ],
             },
-            {
-                icon: Fries,
-                index: "/donate",
-                title: "支持作者",
-            },
+            // {
+            //     icon: Fries,
+            //     index: "/donate",
+            //     title: "支持作者",
+            // },
         ];
 
         const route = useRoute();

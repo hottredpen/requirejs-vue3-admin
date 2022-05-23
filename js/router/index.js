@@ -5,9 +5,9 @@ import BaseTable from 'component!../view/demo/BaseTable'
 import BaseForm from 'component!../view/demo/BaseForm'
 import Tabs from 'component!../view/demo/Tabs'
 import Upload from 'component!../view/demo/Upload'
-import Editor from 'component!../view/demo/Editor'
-import Icon from 'component!../view/demo/Icon'
-import I18n from 'component!../view/demo/I18n'
+// import Editor from 'component!../view/demo/Editor'
+// import Icon from 'component!../view/demo/Icon'
+// import I18n from 'component!../view/demo/I18n'
 import Permission from 'component!../view/demo/Permission'
 import Page404 from 'component!../view/Page404'
 
@@ -63,14 +63,14 @@ const routes = [
                 },
                 component: () => Permission
             }, 
-            {
-                path: "/i18n",
-                name: "i18n",
-                meta: {
-                    title: '国际化语言'
-                },
-                component: () => I18n
-            }, 
+            // {
+            //     path: "/i18n",
+            //     name: "i18n",
+            //     meta: {
+            //         title: '国际化语言'
+            //     },
+            //     component: () => I18n
+            // }, 
             {
                 path: "/upload",
                 name: "upload",
@@ -79,14 +79,14 @@ const routes = [
                 },
                 component: () => Upload
             },
-            {
-                path: "/icon",
-                name: "icon",
-                meta: {
-                    title: '自定义图标'
-                },
-                component: () => Icon
-            },
+            // {
+            //     path: "/icon",
+            //     name: "icon",
+            //     meta: {
+            //         title: '自定义图标'
+            //     },
+            //     component: () => Icon
+            // },
             {
                 path: '/404',
                 name: '404',
@@ -95,14 +95,14 @@ const routes = [
                 },
                 component: () => Page404
             }, 
-            {
-                path: '/editor',
-                name: 'editor',
-                meta: {
-                    title: '富文本编辑器'
-                },
-                component: Editor
-            }
+            // {
+            //     path: '/editor',
+            //     name: 'editor',
+            //     meta: {
+            //         title: '富文本编辑器'
+            //     },
+            //     component: Editor
+            // }
         ]
     },
      {

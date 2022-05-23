@@ -37,7 +37,7 @@
                     </span>
                     <template #dropdown>
                         <el-dropdown-menu>
-                            <a href="https://github.com/lin-xin/vue-manage-system" target="_blank">
+                            <a href="https://github.com/hottredpen/requirejs-vue3-admin" target="_blank">
                                 <el-dropdown-item>项目仓库</el-dropdown-item>
                             </a>
                             <el-dropdown-item command="user">个人中心</el-dropdown-item>

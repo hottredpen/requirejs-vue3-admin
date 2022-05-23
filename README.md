@@ -14,4 +14,4 @@ http://requirejs-vue3-admin.jk-kj.com/
 - [x] 表单相关
 
 ## 感谢
-[https://github.com/lin-xin/vue-manage-system](vue-manage-system)
+[vue-manage-system](https://github.com/lin-xin/vue-manage-system)

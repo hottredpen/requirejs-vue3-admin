@@ -1,18 +1,19 @@
-define(['babel-standalone', 'vue3-sfc-loader'], function (Babel, vue3SfcLoader) {
+define(['babel-standalone', 'vue3-sfc-loader','less!./view/pages/dashboard.less'], function (Babel, vue3SfcLoader,dashboard_less) {
     const options = {
         moduleCache: {
           vue: Vue,
           vuex: Vuex,
-          'vue-router' : VueRouter
+          'vue-router' : VueRouter,
+          'dashboard.less':dashboard_less
         },
         async getFile(url) {
-          // console.log('getFile',url)
-          const res = await fetch(url);
-          if ( !res.ok )
-            throw Object.assign(new Error(res.statusText + ' ' + url), { res });
-          return {
-            getContentData: asBinary => asBinary ? res.arrayBuffer() : res.text(),
-          }
+            // console.log('getFile',url)
+            const res = await fetch(url);
+            if ( !res.ok )
+              throw Object.assign(new Error(res.statusText + ' ' + url), { res });
+            return {
+              getContentData: asBinary => asBinary ? res.arrayBuffer() : res.text(),
+            }
         },
         addStyle(textContent) {
           const style = Object.assign(document.createElement('style'), { textContent });

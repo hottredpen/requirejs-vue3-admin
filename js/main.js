@@ -11,8 +11,12 @@ require.config({
         'axios':'http://requirejs-vue3-admin.jk-kj.com/js/lib/axios.min',
         'qs':'http://requirejs-vue3-admin.jk-kj.com/js/lib/qs',
         //
-        'babel': 'transform3/babel',
-        'component': 'transform3/component',
+        'babel': 'http://iview3.me/js/transform3/babel',
+        'component': 'http://iview3.me/js/transform3/component',
+        'less-builder':'http://iview3.me/js/transform3/less/less-builder',
+        'normalize':'http://iview3.me/js/transform3/less/normalize',
+        'lessc':'http://iview3.me/js/transform3/less/lessc',
+        'less': 'http://iview3.me/js/transform3/less',
     },
 });
 require(['babel!app'],function(app){

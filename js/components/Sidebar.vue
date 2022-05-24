@@ -73,6 +73,11 @@ export default {
                 title: "基础表格",
             },
             {
+                icon: Grid,
+                index: "/join",
+                title: "join",
+            },
+            {
                 icon: Discount,
                 index: "/tabs",
                 title: "tab选项卡",

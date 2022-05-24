@@ -11,7 +11,7 @@ import Upload from 'component!../view/demo/Upload'
 import Permission from 'component!../view/demo/Permission'
 import Page404 from 'component!../view/Page404'
 import Page403 from 'component!../view/Page403'
-
+import DynamicPage from 'component!../view/DynamicPage'
 
 const routes = [
     {
@@ -30,6 +30,14 @@ const routes = [
                     title: '系统首页'
                 },
                 component: Dashboard
+            }, 
+            {
+                path: "/join",
+                name: "join",
+                meta: {
+                    title: 'join'
+                },
+                component: DynamicPage
             }, 
             {
                 path: "/table",

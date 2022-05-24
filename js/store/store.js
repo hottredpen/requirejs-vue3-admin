@@ -51,6 +51,36 @@ export default window.Vuex.createStore({
             state.collapse = data;
         }
     },
-    actions: {},
+    actions: {
+        sss({ commit, state }, {'component_name':component_name,'cb':cb}) {
+            console.log('component_name0',component_name)
+            console.log('cb0',cb)
+            return new Promise(function(resolve, reject) {
+                console.log('component_name',component_name)
+                console.log('cb',cb)
+
+                // component_name = 'test3'
+                var is_add_version = '?version='+Date.parse(new Date());
+                is_add_version = "";
+                require(['component!http://iview3.me/js/view/pages/'+component_name+is_add_version],function(component_js){
+                    // console.log(component_js);
+                    if(component_js){
+                        // console.log('入口处载入的component_js');
+                        // console.log(component_js);
+                        cb(component_js);
+                        resolve(true);
+                    }else{
+                        reject(false);
+                    }
+                });
+            });
+
+
+            // return new Promise((resolve) => {
+            //   commit('DEL_VISITED_VIEWS', view)
+            //   resolve([...state.visitedViews])
+            // })
+        }
+    },
     modules: {}
 })

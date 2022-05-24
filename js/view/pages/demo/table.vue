@@ -3,7 +3,6 @@
         <div class="crumbs">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item>
-                    <!-- <i class="el-icon-lx-cascades"></i> 基础表格 -->
                     <el-icon class="no-inherit"></el-icon> 基础表格1<Edit style="width: 1em; height: 1em; margin-right: 8px" />
                 </el-breadcrumb-item>
             </el-breadcrumb>

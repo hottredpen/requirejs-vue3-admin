@@ -69,17 +69,12 @@ export default {
             },
             {
                 icon: Grid,
-                index: "/table",
+                index: "/demo/table",
                 title: "基础表格",
             },
             {
-                icon: Grid,
-                index: "/join",
-                title: "join",
-            },
-            {
                 icon: Discount,
-                index: "/tabs",
+                index: "/demo/tabs",
                 title: "tab选项卡",
             },
             {
@@ -88,47 +83,28 @@ export default {
                 title: "表单相关",
                 subs: [
                     {
-                        index: "/form",
+                        index: "/demo/form",
                         title: "基本表单",
                     },
                     {
-                        index: "/upload",
-                        title: "文件上传",
+                        index: "4",
+                        title: "三级菜单",
+                        subs: [
+                            {
+                                index: "/demo/upload",
+                                title: "文件上传",
+                            },
+                        ],
                     },
-                    // {
-                    //     index: "4",
-                    //     title: "三级菜单",
-                    //     subs: [
-                    //         {
-                    //             index: "/editor",
-                    //             title: "富文本编辑器",
-                    //         },
-                    //     ],
-                    // },
                 ],
             },
-            // {
-            //     icon: Sugar,
-            //     index: "/icon",
-            //     title: "自定义图标",
-            // },
-            // {
-            //     icon: PieChart,
-            //     index: "/charts",
-            //     title: "schart图表",
-            // },
-            // {
-            //     icon: ElementPlus,
-            //     index: "/i18n",
-            //     title: "国际化功能",
-            // },
             {
                 icon: Failed,
                 index: "7",
                 title: "错误处理",
                 subs: [
                     {
-                        index: "/permission",
+                        index: "/demo/permission",
                         title: "权限测试",
                     },
                     {
@@ -137,11 +113,6 @@ export default {
                     },
                 ],
             },
-            // {
-            //     icon: Fries,
-            //     index: "/donate",
-            //     title: "支持作者",
-            // },
         ];
 
         const route = useRoute();

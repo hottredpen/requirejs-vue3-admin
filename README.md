@@ -11,7 +11,7 @@ http://requirejs-vue3-admin.jk-kj.com/
 - [x] 基础表单
 - [x] tab选项卡
 - [x] 表单相关
-- [x] 表单相关
+- [x] 错误处理
 
 ## 感谢
 [vue-manage-system](https://github.com/lin-xin/vue-manage-system)

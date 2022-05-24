@@ -18,42 +18,4 @@ require.config({
 require(['babel!app'],function(app){
     console.log('app');
     console.log(app);
-
-    // const emitter = window.mitt()
-    // console.log('emitter.on')
-    // emitter.on('sss', (ddd) => {
-    //     console.log('ddsdssdsdsdsdsddsdsd')
-    // } )
-
-    // // 动态加载组件
-    // app.default.$store.sss = function(component_name,cb){
-    //     return new Promise(function(resolve, reject) {
-    //         // component_name = 'test3'
-    //         var is_add_version = '?version='+Date.parse(new Date());
-    //         is_add_version = "";
-    //         require(['component!http://iview.me/vuebuilder/'+component_name+is_add_version],function(component_js){
-    //             // console.log(component_js);
-    //             if(component_js){
-    //                 // console.log('入口处载入的component_js');
-    //                 // console.log(component_js);
-    //                 cb(component_js);
-    //                 resolve(true);
-    //             }else{
-    //                 reject(false);
-    //             }
-    //         });
-
-    //         // require(['component!http://iview.me/js/view/'+component_name],function(component_js){
-    //         //     if(component_js){
-    //         //         console.log('入口处载入的component_js');
-    //         //         console.log(component_js);
-    //         //         cb(component_js);
-    //         //         resolve(component_js);
-    //         //     }else{
-    //         //         reject(false);
-    //         //     }
-    //         // });
-    //     });
-    // }
-
 });

@@ -53,10 +53,7 @@
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
-
-const Expand = window.ElementPlusIconsVue.Expand
-const Fold = window.ElementPlusIconsVue.Fold
-const Cloudy = window.ElementPlusIconsVue.Cloudy
+import { Expand, Fold, Cloudy } from "element-plus/icons-vue"
 
 export default {
     components: {

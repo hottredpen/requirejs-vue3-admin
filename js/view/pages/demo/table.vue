@@ -79,7 +79,7 @@
 
 <script>
 import { ref, reactive } from "vue";
-// import { ElMessage, ElMessageBox } from "element-plus";
+import { ElMessage, ElMessageBox } from "element-plus";
 // import { fetchData } from "../api/index";
 
 export default {
@@ -156,11 +156,11 @@ export default {
         // 删除操作
         const handleDelete = (index) => {
             // 二次确认删除
-            window.ElementPlus.ElMessageBox.confirm("确定要删除吗？", "提示", {
+            ElMessageBox.confirm("确定要删除吗？", "提示", {
                 type: "warning",
             })
                 .then(() => {
-                    window.ElementPlus.ElMessage.success("删除成功");
+                    ElMessage.success("删除成功");
                     tableData.value.splice(index, 1);
                 })
                 .catch(() => {});
@@ -182,7 +182,7 @@ export default {
         };
         const saveEdit = () => {
             editVisible.value = false;
-            window.ElementPlus.ElMessage.success(`修改第 ${idx + 1} 行成功`);
+            ElMessage.success(`修改第 ${idx + 1} 行成功`);
             Object.keys(form).forEach((item) => {
                 tableData.value[idx][item] = form[item];
             });

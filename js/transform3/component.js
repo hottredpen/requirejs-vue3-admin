@@ -1,10 +1,15 @@
 define(['babel-standalone', 'vue3-sfc-loader','less!./view/pages/dashboard.less'], function (Babel, vue3SfcLoader,dashboard_less) {
     const options = {
         moduleCache: {
-          vue: Vue,
-          vuex: Vuex,
-          'vue-router' : VueRouter,
-          'dashboard.less':dashboard_less
+          vue: window.Vue,
+          vuex: window.Vuex,
+          'vue-router' : window.VueRouter,
+          'element-plus': window.ElementPlus,
+          'element-plus/icons-vue': window.ElementPlusIconsVue,
+          'dashboard.less':dashboard_less,
+          'echarts': window.echarts,
+          'vue-echarts': window.VueECharts,
+          'echarts/core': window.echarts,
         },
         async getFile(url) {
             // console.log('getFile',url)

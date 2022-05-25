@@ -6,7 +6,7 @@
 
 <script lang="babel">
 export default {
-  name: 'App'
+  name: 'App',
 };
 </script>
 

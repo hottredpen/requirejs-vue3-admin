@@ -39,16 +39,7 @@
 import { computed, watch } from "vue";
 import { useStore } from "vuex";
 import { useRoute } from "vue-router";
-
-const HomeFilled = window.ElementPlusIconsVue.HomeFilled
-const Grid = window.ElementPlusIconsVue.Grid
-const Discount = window.ElementPlusIconsVue.Discount
-const Document = window.ElementPlusIconsVue.Document
-const Sugar = window.ElementPlusIconsVue.Sugar
-const PieChart = window.ElementPlusIconsVue.PieChart
-const ElementPlus = window.ElementPlusIconsVue.ElementPlus
-const Failed = window.ElementPlusIconsVue.Failed
-const Fries = window.ElementPlusIconsVue.Fries
+import { HomeFilled, Grid, Discount, Document, Sugar, PieChart, ElementPlus, Failed, Fries } from "element-plus/icons-vue"
 
 export default {
     components: {

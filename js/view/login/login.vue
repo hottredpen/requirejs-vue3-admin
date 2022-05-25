@@ -31,7 +31,7 @@
 import { ref, reactive } from "vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
-// import { ElMessage } from "element-plus";
+import { ElMessage } from "element-plus";
 export default {
     setup() {
         const router = useRouter();
@@ -56,11 +56,11 @@ export default {
             login.value.validate((valid) => {
                 console.log(window)
                 if (valid) {
-                    ElementPlus.ElMessage.success("登录成功");
+                    ElMessage.success("登录成功");
                     localStorage.setItem("ms_username", param.username);
                     router.push("/");
                 } else {
-                    ElementPlus.ElMessage.error("登录成功");
+                    ElMessage.error("登录成功");
                     return false;
                 }
             });

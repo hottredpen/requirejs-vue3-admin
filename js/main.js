@@ -17,6 +17,9 @@ require.config({
         'normalize':'http://iview3.me/js/transform3/less/normalize',
         'lessc':'http://iview3.me/js/transform3/less/lessc',
         'less': 'http://iview3.me/js/transform3/less',
+        //
+        'echarts' : "http://iview3.me/js/lib/echarts5.3.2",
+        'vue-echarts': "http://iview3.me/js/lib/vue-echarts@6.0.3"
     },
 });
 require(['babel!app'],function(app){

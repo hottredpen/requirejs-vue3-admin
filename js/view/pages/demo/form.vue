@@ -71,7 +71,7 @@
 
 <script>
 import { reactive, ref } from "vue";
-// import { ElMessage } from "element-plus";
+import { ElMessage } from "element-plus";
 export default {
     name: "baseform",
     setup() {
@@ -150,7 +150,7 @@ export default {
             formRef.value.validate((valid) => {
                 if (valid) {
                     console.log(form);
-                    window.ElementPlus.ElMessage.success("提交成功！");
+                    ElMessage.success("提交成功！");
                 } else {
                     return false;
                 }

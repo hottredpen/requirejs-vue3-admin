@@ -3,6 +3,8 @@ import store from 'babel!./store/store';
 import App from 'component!./App';
 
 let app = window.Vue.createApp(App)
+
+app.component("v-chart", window.VueECharts)
 app.use(window.ElementPlus);
 app.use(window.ElementPlusIconsVue);
 app.use(store)

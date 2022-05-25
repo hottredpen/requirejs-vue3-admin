@@ -11,15 +11,15 @@ require.config({
         'axios':'http://requirejs-vue3-admin.jk-kj.com/js/lib/axios.min',
         'qs':'http://requirejs-vue3-admin.jk-kj.com/js/lib/qs',
         //
-        'babel': 'http://iview3.me/js/transform3/babel',
-        'component': 'http://iview3.me/js/transform3/component',
-        'less-builder':'http://iview3.me/js/transform3/less/less-builder',
-        'normalize':'http://iview3.me/js/transform3/less/normalize',
-        'lessc':'http://iview3.me/js/transform3/less/lessc',
-        'less': 'http://iview3.me/js/transform3/less',
+        'babel': 'http://requirejs-vue3-admin.jk-kj.com/js/transform3/babel',
+        'component': 'http://requirejs-vue3-admin.jk-kj.com/js/transform3/component',
+        'less-builder':'http://requirejs-vue3-admin.jk-kj.com/js/transform3/less/less-builder',
+        'normalize':'http://requirejs-vue3-admin.jk-kj.com/js/transform3/less/normalize',
+        'lessc':'http://requirejs-vue3-admin.jk-kj.com/js/transform3/less/lessc',
+        'less': 'http://requirejs-vue3-admin.jk-kj.com/js/transform3/less',
         //
-        'echarts' : "http://iview3.me/js/lib/echarts5.3.2",
-        'vue-echarts': "http://iview3.me/js/lib/vue-echarts@6.0.3"
+        'echarts' : "http://requirejs-vue3-admin.jk-kj.com/js/lib/echarts5.3.2",
+        'vue-echarts': "http://requirejs-vue3-admin.jk-kj.com/js/lib/vue-echarts@6.0.3"
     },
 });
 require(['babel!app'],function(app){
